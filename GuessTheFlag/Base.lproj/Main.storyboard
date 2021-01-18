@@ -15,8 +15,30 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cA-2P-ELV">
+                                <rect key="frame" x="107" y="100" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTl-LR-23K">
+                                <rect key="frame" x="107" y="230" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmH-Ny-bbP">
+                                <rect key="frame" x="107" y="360" width="200" height="100"/>
+                                <state key="normal" image="us"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dTl-LR-23K" firstAttribute="centerX" secondItem="3cA-2P-ELV" secondAttribute="centerX" id="Awm-Xe-cPV"/>
+                            <constraint firstItem="SmH-Ny-bbP" firstAttribute="top" secondItem="dTl-LR-23K" secondAttribute="bottom" constant="30" id="c1b-go-Dzx"/>
+                            <constraint firstItem="3cA-2P-ELV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fyI-iq-jIH"/>
+                            <constraint firstItem="3cA-2P-ELV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="iqc-jb-JmF"/>
+                            <constraint firstItem="dTl-LR-23K" firstAttribute="top" secondItem="3cA-2P-ELV" secondAttribute="bottom" constant="30" id="nj3-dA-0MA"/>
+                            <constraint firstItem="SmH-Ny-bbP" firstAttribute="centerX" secondItem="dTl-LR-23K" secondAttribute="centerX" id="usV-kn-fv6"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TYP-Ep-dsl"/>
                 </viewController>
@@ -44,6 +66,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="us" width="200" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
